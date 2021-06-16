@@ -11,7 +11,7 @@ function App() {
   useEffect(() => {
     axios
       .get<WheaterData>(
-        `http://api.openweathermap.org/data/2.5/weather?zip=${plz},ch&units=metric&appid=cda2a17e18a88d1ffceb8aeff99c405d`
+        `https://api.openweathermap.org/data/2.5/weather?zip=${plz},ch&units=metric&appid=cda2a17e18a88d1ffceb8aeff99c405d`
       )
       .then((response) => {
         setWeatherData(response.data)
